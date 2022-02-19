@@ -1,31 +1,28 @@
 ormar Adapter for PyCasbin
 ====
 
-## Statistics
-
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/shepilov-vladislav/ormar-casbin-adapter/Pytest?logo=github&style=flat-square)
-![Codecov](https://img.shields.io/codecov/c/github/shepilov-vladislav/ormar-casbin-adapter?logo=codecov&style=flat-square)
-![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/shepilov-vladislav/ormar-casbin-adapter?logo=code%20climate&style=flat-square)
-![Dependabot](https://img.shields.io/badge/dependabot-Active-brightgreen?logo=dependabot&style=flat-square)
+## Repo
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/shepilov-vladislav/ormar-casbin-adapter/Pytest?logo=github&style=for-the-badge)](https://github.com/shepilov-vladislav/ormar-casbin-adapter)
+[![Codecov](https://img.shields.io/codecov/c/github/shepilov-vladislav/ormar-casbin-adapter?logo=codecov&style=for-the-badge)](https://github.com/shepilov-vladislav/ormar-casbin-adapter)
+[![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/shepilov-vladislav/ormar-casbin-adapter?logo=code%20climate&style=for-the-badge)](https://github.com/shepilov-vladislav/ormar-casbin-adapter)
+[![Dependabot](https://img.shields.io/badge/dependabot-Active-brightgreen?logo=dependabot&style=for-the-badge)](https://github.com/shepilov-vladislav/ormar-casbin-adapter)
 
 
 ## GitHub
 
-[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/shepilov-vladislav/ormar-casbin-adapter?label=latest%20stable&sort=semver&style=flat-square)](https://github.com/shepilov-vladislav/ormar-casbin-adapter/releases)
-[![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/shepilov-vladislav/ormar-casbin-adapter?label=latest%20unstable&style=flat-square)](https://github.com/shepilov-vladislav/ormar-casbin-adapter/releases)
-[![GitHub last commit](https://img.shields.io/github/last-commit/shepilov-vladislav/ormar-casbin-adapter?style=flat-square)](https://github.com/shepilov-vladislav/ormar-casbin-adapter/commits/master)
+[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/shepilov-vladislav/ormar-casbin-adapter?label=latest%20stable&sort=semver&style=for-the-badge)](https://github.com/shepilov-vladislav/ormar-casbin-adapter/releases)
+[![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/shepilov-vladislav/ormar-casbin-adapter?label=latest%20unstable&style=for-the-badge)](https://github.com/shepilov-vladislav/ormar-casbin-adapter/releases)
+[![GitHub last commit](https://img.shields.io/github/last-commit/shepilov-vladislav/ormar-casbin-adapter?style=for-the-badge)](https://github.com/shepilov-vladislav/ormar-casbin-adapter/commits/master)
 
 ## PyPI
 
-[![Version](https://img.shields.io/pypi/v/ormar_casbin_adapter.svg)](https://pypi.org/project/ormar_casbin_adapter/)
-[![PyPI - Wheel](https://img.shields.io/pypi/wheel/ormar_casbin_adapter.svg)](https://pypi.org/project/ormar_casbin_adapter/)
-[![Python Versions](https://img.shields.io/pypi/pyversions/ormar_casbin_adapter?logo=python&style=flat-square)](https://pypi.org/project/ormar_casbin_adapter)
-![PyPI - Format](https://img.shields.io/pypi/format/ormar_casbin_adapter?style=flat-square)
-![PyPI - Status](https://img.shields.io/pypi/status/ormar_casbin_adapter?style=flat-square)
-[![PyPI](https://img.shields.io/pypi/v/ormar_casbin_adapter?style=flat-square)](https://pypi.org/project/ormar_casbin_adapter)
-![PyPI - Downloads](https://img.shields.io/pypi/dd/ormar_casbin_adapter?style=flat-square)
-[![Download](https://img.shields.io/pypi/dm/ormar_casbin_adapter.svg)](https://pypi.org/project/ormar_casbin_adapter/)
-[![License](https://img.shields.io/pypi/l/ormar_casbin_adapter.svg)](https://pypi.org/project/ormar_casbin_adapter/)
+[![PyPI - Version](https://img.shields.io/pypi/v/ormar-casbin-adapter?style=for-the-badge)](https://pypi.org/project/ormar-casbin-adapter)
+[![PyPI - Python Versions](https://img.shields.io/pypi/pyversions/ormar-casbin-adapter?style=for-the-badge)](https://pypi.org/project/ormar-casbin-adapter)
+[![PyPI - Python Wheel](https://img.shields.io/pypi/wheel/ormar-casbin-adapter?style=for-the-badge)](https://pypi.org/project/ormar-casbin-adapter)
+[![PyPI - Format](https://img.shields.io/pypi/format/ormar-casbin-adapter?style=for-the-badge)](https://pypi.org/project/ormar-casbin-adapter)
+[![PyPI - Status](https://img.shields.io/pypi/status/ormar-casbin-adapter?style=for-the-badge)](https://pypi.org/project/ormar-casbin-adapter)
+[![PyPI - Downloads](https://img.shields.io/pypi/dd/ormar-casbin-adapter?style=for-the-badge)](https://pypi.org/project/ormar-casbin-adapter)
+[![PyPI - License](https://img.shields.io/pypi/l/ormar-casbin-adapter?style=for-the-badge)](https://pypi.org/project/ormar-casbin-adapter)
 
 ormar Adapter is the [ormar](https://collerek.github.io/ormar/) adapter for [PyCasbin](https://github.com/casbin/pycasbin). With this library, Casbin can load policy from ormar supported database or save policy to it.
 

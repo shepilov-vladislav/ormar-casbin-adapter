@@ -41,6 +41,7 @@ jobs:
     - name: Test with pytest
       run: |
         poetry run pytest --cov
+        poetry run coverage xml
         ls -al
       env:
         POSTGRES_HOST: localhost
@@ -50,4 +51,5 @@ jobs:
         POSTGRES_DB: TEST_DATABASE
     - name: Codecov
       uses: codecov/codecov-action@v2.1.0
-      files: coverage.xml
+      with:
+        files: coverage.xml
