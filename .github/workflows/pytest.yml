@@ -1,0 +1,53 @@
+name: Pytest
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    # Service containers to run with `container-job`
+    services:
+      # Label used to access the service container
+      db:
+        # Docker Hub image
+        image: postgres:13-alpine
+        # Provide the password for postgres
+        env:
+          POSTGRES_USER: DEV_USER
+          POSTGRES_PASSWORD: DEV_PASSWORD
+          POSTGRES_DB: TEST_DATABASE
+        ports:
+          - 5432:5432
+        # Set health checks to wait until postgres has started
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+    - uses: actions/checkout@v2.3.4
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v2.3.2
+      with:
+        python-version: '3.10'
+    - name: Install dependencies
+      run: |
+        pip install -U pip
+        pip install poetry
+        poetry install
+    - name: Test with pytest
+      run: |
+        poetry run pytest --cov
+        ls -al
+      env:
+        POSTGRES_HOST: localhost
+        POSTGRES_PORT: 5432
+        POSTGRES_USER: DEV_USER
+        POSTGRES_PASSWORD: DEV_PASSWORD
+        POSTGRES_DB: TEST_DATABASE
+    - name: Codecov
+      uses: codecov/codecov-action@v2.1.0
+      files: coverage.xml
