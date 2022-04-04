@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ormar-casbin-adapter"
-version = "0.0.1"
+version = "0.0.2"
 description = "ormar casbin adapter"
 authors = ["Vladislav Shepilov <shepilov.v@protonmail.com>"]
 keywords = ["keyword", "another_keyword"]
@@ -14,16 +14,16 @@ include = [
 
 [tool.poetry.dependencies]
 python = "^3.10"
-ormar = "^0.10.24"
+ormar = "^0.11.0"
 asynccasbin = "^1.1.8"
 
 [tool.poetry.dev-dependencies]
-pytest = "^7.0.1"
+pytest = "^7.1.1"
 pytest-cov = "^3.0.0"
 alt-pytest-asyncio = "^0.6.0"
 psycopg2 = "^2.9.3"
-SQLAlchemy = "1.4.29"
-databases = "^0.5.4"
+SQLAlchemy = "1.4.34"
+databases = "^0.5.5"
 asyncpg = "^0.25.0"
 
 [tool.isort]
